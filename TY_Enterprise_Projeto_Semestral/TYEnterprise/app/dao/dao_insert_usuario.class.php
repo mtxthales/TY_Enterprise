@@ -1,16 +1,16 @@
 <?php
 
-include 'conexao.php';
+  include 'conexao.class.php';
 
-  class ManipuladorUsuario{
+  class DAOInsertUsuario{
 
-    public static function inserir(Usuario $usuario){
-
-      $conexao = Conexao::getConexao();
+    public static function insert(Usuario $usuario){
 
       $codigo = $usuario->getCodigo();
       $nome = $usuario->getNome();
       $perfil = $usuario->getPerfil();
+
+      $conexao = DAOConexao::getConexao();
 
       $query = "insert into usuario values($codigo, '$nome', '$perfil');";
 

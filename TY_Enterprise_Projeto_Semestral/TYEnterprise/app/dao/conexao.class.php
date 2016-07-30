@@ -1,5 +1,5 @@
 <?php
-  class Conexao{
+  class DAOConexao{
 
     private static $conexao;
     private static $servidor= "localhost";

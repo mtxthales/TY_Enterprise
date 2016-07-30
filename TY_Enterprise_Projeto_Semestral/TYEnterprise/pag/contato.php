@@ -40,13 +40,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/TYEnterprise/index.html"><img class="img-responsive" src="../img/ty01.png"></a>
+                <a class="navbar-brand" href="../index.html"><img class="img-responsive" src="../img/ty01.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/TYEnterprise/index.html"><span class="menu">Sobre</span></a>
+                        <a href="../index.html"><span class="menu">Sobre</span></a>
                     </li>
                     <li>
                         <a href="portfolio.php"><span class="menu">Portfólio</span></a>
@@ -75,7 +75,7 @@
                 <h2>Contato:</h2>
                 <p>Telefone:(073)99999-9999 </p>
                 <p>Email:   contato@tyenterprise.com.br </p>
-                               
+
                   <br>
                   <form role="form">
                       <div class="form-group">
@@ -87,14 +87,14 @@
                       <input type="text" class="form-control" id="pwd" placeholder="Assunto">
                     </div>
                     <div class="form-group">
-                      
+
                       <textarea class="form-control" rowa="3" id="area"></textarea>
                     </div>
                     <div class="form-group">
                     <button type="submit" class="btn btn-default">Enviar</button>
                     </div>
                   </form>
-              
+
 
 
             </div>

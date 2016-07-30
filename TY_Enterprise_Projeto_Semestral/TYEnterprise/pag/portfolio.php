@@ -40,13 +40,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/TYEnterprise/index.html"><img class="img-responsive"src="../img/ty01.png"></a>
+                <a class="navbar-brand" href="../index.html"><img class="img-responsive"src="../img/ty01.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/TYEnterprise/index.html"><span class="menu">Sobre</span></a>
+                        <a href="../index.html"><span class="menu">Sobre</span></a>
                     </li>
                     <li>
                         <a href="portfolio.php"><span class="menu">Portfólio</span></a>
@@ -69,24 +69,24 @@
 
     <!-- Page Content -->
     <div class="container">
-     <h1 class="titleTPrincipal"><img class="img-responsive" src="../img/ty02.png"></h1> 
+     <h1 class="titleTPrincipal"><img class="img-responsive" src="../img/ty02.png"></h1>
      <br>
      <H2>Clientes</H2><br>
         <div class="row">
             <div class="col-md-4 col-sm-12">
-              
+
               <img src="../img/ifba.png" id="port1"class="img-responsive" alt="Imagem responsiva">
 
 
             </div>
             <div class="col-md-4 col-sm-12">
-                
+
               <img src="../img/ifba.png"  id="port2"class="img-responsive" alt="Imagem responsiva">
 
 
             </div>
             <div class="col-md-4 col-sm-12">
-                
+
                 <img src="../img/ifba.png" id="port3" class="img-responsive" alt="Imagem responsiva">
 
             </div>
