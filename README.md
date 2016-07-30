@@ -1,6 +1,6 @@
 # TY_Enterprise
 Projeto Semestral IFBA 
 
-Alex Godin
-Matheus Thales
+Alex Godin<br/>
+Matheus Thales<br/>
 Ygor Pires
