@@ -17,7 +17,7 @@
         <th>PERFIL </th>
       </tr>
 
-      <?php while($row= mysqli_fetch_array($result)) ?>
+      <?php while($row= mysqli_fetch_object($result)) ?>
 
     </table>
 

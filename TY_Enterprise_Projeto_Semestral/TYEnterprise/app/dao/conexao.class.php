@@ -3,9 +3,9 @@
 
     private static $conexao;
     private static $servidor= "localhost";
-    private static $database= "db_semestral";
+    private static $database= "db_recurso";
     private static $usuario= "root";
-    private static $senha= "123";
+    private static $senha= "root";
 
     static function getConexao(){
 
