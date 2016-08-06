@@ -41,9 +41,13 @@
             
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                 <ul class='nav navbar-nav'>
-                    <li>
-                        <a href='#'><span class='menu'>Cadastro</span></a>
-                    </li>
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu">Cadastro<span class="caret"></span></span></a>
+                    <ul class="dropdown-menu">
+                          <li><a href="#">Material</a></li>
+                          <li><a href="#">Estrutura</a></li>
+                    </ul>
+                 </li> 
                     <li>
                         <a href='#'><span class='menu'>Reserva</span></a>
                     </li>
