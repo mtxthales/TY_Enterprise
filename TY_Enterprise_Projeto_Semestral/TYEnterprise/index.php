@@ -36,7 +36,7 @@
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a class='navbar-brand' href='#'><img class='img-responsive'src='img/ty01.png'></a>
+                <a class='navbar-brand' href='/TYEnterprise/index.html'><img class='img-responsive'src='img/ty01.png'></a>
             </div>
             
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
