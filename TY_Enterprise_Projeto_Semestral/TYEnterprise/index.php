@@ -11,14 +11,14 @@
     <title>Gerenciador de Recursos</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='static/css/bootstrap.min.css' rel='stylesheet'>
 
-    
-    <link href='css/style.css' rel='stylesheet'>
 
-    
-    
-    
+    <link href='static/css/style.css' rel='stylesheet'>
+
+
+
+
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
         <div id="header"></div>
         <div class='container-fluid'>
-        
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class='navbar-header'>
                 <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
@@ -36,9 +36,9 @@
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a class='navbar-brand' href='/TYEnterprise/index.html'><img class='img-responsive'src='img/ty01.png'></a>
+                <a class='navbar-brand' href='/TYEnterprise/index.php'><img class='img-responsive'src='static/img/ty01.png'></a>
             </div>
-            
+
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                 <ul class='nav navbar-nav'>
                     <li class="dropdown">
@@ -47,7 +47,7 @@
                           <li><a href="#">Material</a></li>
                           <li><a href="#">Estrutura</a></li>
                     </ul>
-                 </li> 
+                 </li>
                     <li>
                         <a href='#'><span class='menu'>Reserva</span></a>
                     </li>
@@ -62,14 +62,14 @@
                     <li><a href='#'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>
                </ul>
             </div>
-           
+
         </div>
-       
+
     </nav>
-    <script src='js/jquery.js'></script>
+    <script src='static/js/jquery.js'></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src='js/bootstrap.min.js'></script>
+    <script src='static/js/bootstrap.min.js'></script>
 
 </body>
 
