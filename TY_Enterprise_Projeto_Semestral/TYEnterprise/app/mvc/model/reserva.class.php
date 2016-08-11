@@ -5,15 +5,15 @@
 
   class Reserva{
 
-    $codigo;
-    Usuario $usuario;
-    Recurso $recurso;
-    $data_solicitacao;
-    $hora_inicio;
-    $hora_fim;
-    $solicitante;
-    $data_devolucao;
-    $hora_devolucao;
+    private $codigo;
+    private Usuario $usuario;
+    private Recurso $recurso;
+    private $data_solicitacao;
+    private $hora_inicio;
+    private $hora_fim;
+    private $solicitante;
+    private $data_devolucao;
+    private $hora_devolucao;
 
     function __construct(int $codigo){
       $this->codigo = $codigo;

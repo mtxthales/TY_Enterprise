@@ -2,8 +2,8 @@
 
   class TipoRecurso{
 
-    private $codigo;
-    private $descricao;
+    private int $codigo;
+    private string $descricao;
 
     function __construct($codigo){
       $this->codigo = $codigo;

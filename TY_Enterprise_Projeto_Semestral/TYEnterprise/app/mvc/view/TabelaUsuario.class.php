@@ -1,8 +1,9 @@
 <?php
 
-  include '././dao/dao_select_usuario.class.php';
+  include '././dao/dao_usuario.class.php';
+  include ('././controller/pagina.class.php');
 
-  class TabelaUsuario
+  class TabelaUsuario implements Pagina
   {
 
     private $tabela = '';
@@ -29,7 +30,7 @@
       $this->tabela .= "</table>";
     }
 
-    public function show()
+    public function exibir()
     {
       echo $this->tabela;
     }
