@@ -2,7 +2,7 @@
 
   function __autoload($classe)
   {
-    $pastas = array('mvc/model', 'mvc/controller/ctrl_usuario', 'dao');
+    $pastas = array('mvc/view', 'mvc/model', 'mvc/controller/ctrl_usuario', 'dao');
     foreach ($pastas as $pasta)
     {
       if(file_exists("{$pasta}/{$classe}.class.php"))

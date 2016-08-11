@@ -2,10 +2,10 @@
 
   class Usuario{
 
-    private string $nome;
-    private int $perfil;
+    private $nome;
+    private $perfil;
 
-    public function setNome(string $nome){
+    public function setNome($nome){
       $this->nome = $nome;
     }
 
@@ -13,7 +13,7 @@
       return $this->nome;
     }
 
-    public function setPerfil(int $perfil){
+    public function setPerfil($perfil){
       $this->perfil = $perfil;
     }
 

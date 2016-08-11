@@ -1,0 +1,20 @@
+@startuml
+
+Actor usuario
+
+usuario -> Front_Controller: request
+Front_Controller -> Front_Controller: analisa URL
+Front_Controller -> Command: new execute()
+Command -> Model: new
+Model --> Command
+Command -> BO
+BO -> BO: valida
+BO -> dao
+database database
+dao -> database
+database --> dao: return
+dao --> BO: return
+BO --> Command: return
+Command --> usuario: result
+
+@enduml

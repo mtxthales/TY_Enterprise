@@ -1,0 +1,15 @@
+@startuml
+
+class Front_Controller{
+  +request(URL): void
+}
+
+interface Controller{
+  +execute(): void
+}
+
+Usuario - Front_Controller: request >
+Front_Controller - Controller: execute >
+Controller - Usuario: result >
+
+@enduml

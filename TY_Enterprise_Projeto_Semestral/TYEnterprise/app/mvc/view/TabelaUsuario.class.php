@@ -1,7 +1,7 @@
 <?php
 
   include '././dao/dao_usuario.class.php';
-  include ('././controller/pagina.class.php');
+  include ('pagina.class.php');
 
   class TabelaUsuario implements Pagina
   {
@@ -11,19 +11,23 @@
     public function __construct()
     {
       $this->tabela= "<table align= 'center' width= '80%' border='1' > ";
-      $cab= "<tr align= 'center'> <th> Codigo </th> <th> Nome </th> <th> Perfil </th></tr>";
+      $cab= "<tr align= 'center'> <th> Nome </th> <th> Perfil </th></tr>";
 
       $this->tabela .= $cab;
 
-      $colunas = array('codigo', 'nome', 'perfil');
+      $colunas = array('nome', 'perfil');
 
-      $result = DAOSelectUsuario::select($colunas, 0);
+      $dao_usuario = new DAOUsuario;
 
-      while($row = mysqli_fetch_array($result)){
+      $arrayUsuario = $dao_usuario->getAll();
+
+      foreach ($arrayUsuario as $usuario)
+      {
+        $nome = $usuario->getNome();
+        $perfil = $usuario->getPerfil()->getNome();
         $this->tabela .= "<tr align= 'center'>";
-        $this->tabela .= "<th> {$row["codigo"]} </th>";
-        $this->tabela .= "<th> {$row["nome"]} </th>";
-        $this->tabela .= "<th> {$row["perfil"]} </th>";
+        $this->tabela .= "<th> {$nome} </th>";
+        $this->tabela .= "<th> {$perfil} </th>";
         $this->tabela .= "</tr>";
       }
 

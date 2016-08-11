@@ -1,15 +1,18 @@
 <?php
 
   include 'conexao.class.php';
+  include 'pdo_connection.class.php';
+  include './mvc/model/usuario.class.php';
+  include './mvc/model/perfil_usuario.class.php';
 
   class DAOUsuario{
 
-    public static function insert(Usuario $usuario){
+    public function insert(Usuario $usuario){
 
-      private $nome = $usuario->getNome();
-      private $perfil = $usuario->getPerfil();
+      $nome = $usuario->getNome();
+      $perfil = $usuario->getPerfil();
 
-      $conector = new Connection("");
+      $conector = new Connector();
       $conexao = $conector->getConnection();
 
       $query = "insert into usuario values('$nome', '$perfil');";
@@ -17,22 +20,40 @@
       $conexao->exec($query);
     }
 
-    public static function select(string $nome){
+    public function select(string $nome){
 
       $conexao = DAOConexao::getConexao();
 
-      $query = "select * from usuario where ";
+      $query = "select * from usuario where login= $nome";
 
       $result = mysqli_query($conexao, $query);
 
       return $result;
     }
 
-    public function selectAll()
+    public function getAll()
     {
-      $array = array();
+      $conexao = Connector::getInstance();
 
-      return $array;
+      $query = 'select * from vw_usuario order by nome';
+
+      $result = $conexao->query($query);
+      $arrayUsuario = array();
+
+      foreach ($result as $row) {
+
+        $perfil = new PerfilUsuario;
+        $perfil->setCodigo($row['cod_perfil']);
+        $perfil->setNome($row['nome_perfil']);
+
+        $usuario = new Usuario;
+        $usuario->setNome($row['nome']);
+        $usuario->setPerfil($perfil);
+
+        array_push($arrayUsuario, $usuario);
+      }
+
+      return $arrayUsuario;
     }
   }
 ?>

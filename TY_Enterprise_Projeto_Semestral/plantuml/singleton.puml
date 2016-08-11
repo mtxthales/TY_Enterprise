@@ -1,0 +1,14 @@
+@startuml
+
+class Connector<<singleton>>{
+  instance: Connector
+  getInstance(): Connector
+}
+
+client1 -- Connector
+client2 -- Connector
+client3 -- Connector
+client4 -- Connector
+client5 -- Connector
+
+@enduml

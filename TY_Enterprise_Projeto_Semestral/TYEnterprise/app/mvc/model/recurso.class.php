@@ -5,7 +5,7 @@ include 'tipo_recurso.class.php';
   class Recurso{
 
     private $codigo;
-    private TipoRecurso $tipo;
+    private $tipo;
     private $descricao;
     private $patrimonio;
     private $disponibilidade;
