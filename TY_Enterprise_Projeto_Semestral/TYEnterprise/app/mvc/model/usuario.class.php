@@ -1,5 +1,7 @@
 <?php
 
+  //include 'perfil_usuario.class.php';
+
   class Usuario{
 
     private $nome;
@@ -13,7 +15,7 @@
       return $this->nome;
     }
 
-    public function setPerfil($perfil){
+    public function setPerfil(PerfilUsuario $perfil){
       $this->perfil = $perfil;
     }
 

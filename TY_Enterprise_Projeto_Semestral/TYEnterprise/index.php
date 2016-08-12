@@ -13,11 +13,7 @@
     <!-- Bootstrap Core CSS -->
     <link href='static/css/bootstrap.min.css' rel='stylesheet'>
 
-
     <link href='static/css/style.css' rel='stylesheet'>
-
-
-
 
 </head>
 
