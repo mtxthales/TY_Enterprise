@@ -16,7 +16,7 @@
   {
     static public function run()
     {
-      $template = file_get_contents('template.html');
+      $template = file_get_contents('template2.html');
       $content = '';
       if($_GET)
       {
@@ -34,7 +34,7 @@
           call_user_func($method, $_GET);
         }
       }
-      echo str_replace('#CONTENT#', $content, $template);
+      echo str_replace('{{content}}', $content, $template);
     }
   }
 

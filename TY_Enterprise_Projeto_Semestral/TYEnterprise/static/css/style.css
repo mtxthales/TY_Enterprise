@@ -10,6 +10,9 @@ body {
 	background: none;
 	
 }
+#content{
+	margin-bottom: 30px;
+}
 
 .full {
   background: url(http:../img/back50.png) no-repeat center center fixed;
@@ -37,6 +40,7 @@ p{
 	height: 60px;
 	width: 100%;
 	text-align: center;
+	
 	
 }
 
