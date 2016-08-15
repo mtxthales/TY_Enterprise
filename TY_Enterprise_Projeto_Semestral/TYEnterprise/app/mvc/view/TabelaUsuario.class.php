@@ -10,7 +10,7 @@
 
     public function __construct()
     {
-      $this->tabela= "<table align= 'center' width= '80%' border='1' > ";
+      $this->tabela= "<table class='table table-bordered' > ";
       $cab= "<tr align= 'center'> <th> Nome </th> <th> Perfil </th></tr>";
 
       $this->tabela .= $cab;

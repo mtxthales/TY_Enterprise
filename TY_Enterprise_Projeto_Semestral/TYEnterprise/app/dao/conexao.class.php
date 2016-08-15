@@ -3,7 +3,7 @@
 
     private static $conexao;
     private static $servidor= "localhost";
-    private static $database= "db_recurso";
+    private static $database= "grsystem";
     private static $usuario= "root";
     private static $senha= "root";
 
